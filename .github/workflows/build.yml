@@ -50,6 +50,13 @@ jobs:
       - name: ROM (HNS)
         run: make hns -j$(nproc) -O
 
+      - name: Upload ROM artifact (HNS)
+        uses: actions/upload-artifact@v4
+        with:
+          name: pokehns
+          path: pokehns.gba
+          if-no-files-found: error
+
   release:
     if: github.actor != 'allcontributors[bot]'
     runs-on: ubuntu-latest
@@ -86,6 +93,13 @@ jobs:
         env:
           BUILD: hns
         run: make -j$(nproc) -O release
+
+      - name: Upload ROM artifact (HNS Release)
+        uses: actions/upload-artifact@v4
+        with:
+          name: pokehns-release
+          path: pokehns-release.gba
+          if-no-files-found: error
 
   test:
     if: github.actor != 'allcontributors[bot]'
