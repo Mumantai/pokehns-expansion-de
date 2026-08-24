@@ -7,7 +7,7 @@ gText_Oak_Welcome::
 	.string "$"
 
 gText_Oak_Pokemon::
-	.string "Das ist ein sogenanntes “POKéMON”.{PAUSE 96}\p"	// added Pause to trigger the animation
+	.string "Das ist ein sogenanntes “POKéMON”.{PAUSE 96}\p"
 	.string "$"
 
 gText_Oak_MainSpeech::

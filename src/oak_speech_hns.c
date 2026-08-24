@@ -44,6 +44,7 @@ extern const u8 gText_Oak_AndYouAre[];
 extern const u8 gText_Oak_BoyOrGirl[];
 extern const u8 gText_Oak_WhatChallenge[];
 extern const u8 gText_Oak_ChallengeSelected[];
+extern const u8 gText_Oak_ChallengeDisclaimer[];
 extern const u8 gText_Oak_WhatsYourName[];
 extern const u8 gText_Oak_SoItsPlayer[];
 extern const u8 gText_Oak_YourePlayer[];
@@ -574,9 +575,8 @@ static void Task_NewGameHnsSpeech_SlideInNewGenderSprite(u8 taskId)
 
 static void Task_NewGameHnsSpeech_ChallengeDisclaimer(u8 taskId)
 {
-    static const u8 sText_Disclaimer[] = _("Welche Art Herausforderung\nerwartest du?\p{COLOR RED}Die folgenden Einstellungen können später\n am PC geändert werden.\lDu kannst die Einstellungen zu Nuzlocke\lRandomisierer, Schwierigkeit und\lHerausforderungen nur einfacher\lstellen, nicht schwerer.");
     NewGameHnsSpeech_ClearWindow(0);
-    StringCopy(gStringVar4, sText_Disclaimer);
+    StringCopy(gStringVar4, gText_Oak_ChallengeDisclaimer);
     AddTextPrinterWithCustomSpeedForMessage(FALSE, 2);
     gTasks[taskId].func = Task_NewGameHnsSpeech_WaitDisclaimerText;
 }
