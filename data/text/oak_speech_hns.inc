@@ -7,7 +7,7 @@ gText_Oak_Welcome::
 	.string "$"
 
 gText_Oak_Pokemon::
-	.string "Das hier ist ein sogenanntes “POKéMON”.\p"
+	.string "Das ist ein sogenanntes “POKéMON”.\p"
 	.string "\n"
 	.string "$"
 
