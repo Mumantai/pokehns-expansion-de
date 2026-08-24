@@ -23,17 +23,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LEAF_GUARD },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("CHIKORITA"),
+        .speciesName = _("ENDIVIE"),
         .cryId = CRY_CHIKORITA,
         .natDexNum = NATIONAL_DEX_CHIKORITA,
-        .categoryName = _("Leaf"),
+        .categoryName = _("Laub"),
         .height = 9,
         .weight = 64,
         .description = COMPOUND_STRING(
-            "It waves its leaf around to keep foes\n"
-            "at bay. However, a sweet fragrance also\n"
-            "wafts from the leaf, creating a friendly\n"
-            "atmosphere that becalms the battlers."),
+            "Im Kampf wedelt ENDIVIE mit seinem\n"
+            "Blatt, um den Feind fern zu halten. Das\n"
+            "Blatt verstromt einen tollen Duft, der PKMN\n"
+            "beruhigt und eine nette Atmosphäre schaft."),
         .pokemonScale = 512,
         .pokemonOffset = 20,
         .trainerScale = 256,
