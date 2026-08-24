@@ -16,14 +16,12 @@ gText_Oak_MainSpeech::
 	.string "die man POKéMON nennt.\p"
 	.string "Menschen und POKéMON leben zusammen\n"
 	.string "und helfen einander.\p"
-	.string "Für manche Leute sind POKéMON\n"
-	.string "Haustiere, andere tragen Kämpfe\n"
-	.string "mit ihnen aus.\p"
+	.string "Für manche Leute sind POKéMON Haustiere,\n"
+	.string "andere tragen Kämpfe mit ihnen aus.\p"
 	.string "Leider wissen wir noch nicht alles\n"
 	.string "über POKéMON.\p"
-	.string "Es gibt noch viele Geheimnisse\n"
-	.string "zu lüften. Darum studiere ich\n"
-	.string "POKéMON tagaus, tagein!\p"
+	.string "Es gibt noch viele Geheimnisse zu lüften.\n"
+	.string "Darum studiere ich POKéMON tagaus, tagein!\p"
 	.string "$"
 
 gText_Oak_AndYouAre::
@@ -40,6 +38,16 @@ gText_Oak_WhatChallenge::
 gText_Oak_ChallengeSelected::
 	.string "Das klingt für mich nach\n"
 	.string "genau dem richtigen Niveau!$"
+
+gText_Oak_ChallengeDisclaimer::
+	.string "Welche Art Herausforderung\n"
+	.string "erwartest du?\p"
+	.string "{COLOR RED}Die folgenden Einstellungen können später\n"
+	.string " am PC geändert werden.\l"
+	.string "Du kannst die Einstellungen zu Nuzlocke\l"
+	.string "Randomisierer, Schwierigkeit und\l"
+	.string "Herausforderungen nur einfacher\l"
+	.string "stellen, nicht schwerer.$"
 
 gText_Oak_WhatsYourName::
 	.string "Wie lautet dein Name?$"
