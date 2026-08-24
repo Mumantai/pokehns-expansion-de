@@ -21,7 +21,8 @@ gText_Oak_MainSpeech::
 	.string "Leider wissen wir noch nicht alles\n"
 	.string "über POKéMON.\p"
 	.string "Es gibt noch viele Geheimnisse zu lüften.\n"
-	.string "Darum studiere ich POKéMON tagaus, tagein!\p"
+	.string "Darum studiere ich POKéMON\n"
+	.string "tagaus, tagein!\p"
 	.string "$"
 
 gText_Oak_AndYouAre::
