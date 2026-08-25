@@ -96,17 +96,17 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
-        .speciesName = _("IVYSAUR"),
+        .speciesName = _("BISAKNOSP"),
         .cryId = CRY_IVYSAUR,
         .natDexNum = NATIONAL_DEX_IVYSAUR,
-        .categoryName = _("Seed"),
+        .categoryName = _("Samen"),
         .height = 10,
         .weight = 130,
         .description = COMPOUND_STRING(
-            "To support its bulb, Ivysaur's legs\n"
-            "grow sturdy. If it spends more time lying in\n"
-            "the sunlight, the bud will soon bloom into\n"
-            "a large flower."),
+            "Die Beine von BISAKNOSP sind kräftig,\n"
+            "da sie die Knospe tragen müssen.\n"
+            "Wenn es lange in der Sonne liegt,\n"
+            "beginnt die Knospe bald zu blühen."),
         .pokemonScale = 335,
         .pokemonOffset = 13,
         .trainerScale = 256,
