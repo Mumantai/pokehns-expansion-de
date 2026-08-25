@@ -152,45 +152,45 @@ NewBarkTown_PlayersHouse_1F_EventScript_ExitSavings::
 	return
 
 NewBarkTown_PlayersHouse_1F_Text_MomAnythingElse:
-	.string "Is there anything else I can\n"
-	.string "help you with, sweetie?$"
+	.string "Kann ich dir sonst irgendwie\n"
+	.string "weiterhelfen, Liebling?$"
 
 NewBarkTown_PlayersHouse_1F_Text_CurrentSavings:
-	.string "I'm holding {STR_VAR_2}\n"
-	.string "for you right now.$"
+	.string "Du hast zur Zeit {STR_VAR_2}\n"
+	.string "angespart.$"
 
 NewBarkTown_PlayersHouse_1F_Text_EnableSaving:
-	.string "Do you want me to save some of the\n"
-	.string "money you earn?$"
+	.string "Möchtest du, dass ich ein wenig von\n"
+	.string "dem Geld spare, das du verdienst?$"
 
 NewBarkTown_PlayersHouse_1F_Text_SavingEnabled:
-	.string "Okay! I'll save 25% of\n"
-	.string "the money you earn from battles.$"
+	.string "O.K.! Ich spare 25% des Geldes,\n"
+	.string "das du in Kämpfen verdienst.$"
 
 NewBarkTown_PlayersHouse_1F_Text_DisableSaving:
-	.string "Would you like me to stop\n"
-	.string "saving for you?$"
+	.string "Möchtest du, dass ich aufhöre,\n"
+	.string "für dich zu sparen?$"
 
 NewBarkTown_PlayersHouse_1F_Text_SavingDisabled:
-	.string "Okay, I'll stop saving for now.$"
+	.string "O.K. Ich höre auf, dein Geld zu sparen.$"
 
 NewBarkTown_PlayersHouse_1F_Text_Goodbye:
-	.string "Take care, sweetie!$"
+	.string "Pass auf dich auf, Liebling!$"
 
 NewBarkTown_PlayersHouse_1F_Text_DepositSuccess:
-	.string "MOM: Sounds good! I'll put that in\n"
-	.string "savings for you.$"
+	.string "MAMA: Klingt gut! Ich lege das für\n"
+	.string "dich zum Sparen zurück.$"
 
 NewBarkTown_PlayersHouse_1F_Text_WithdrawSuccess:
-	.string "MOM: Here you go!$"
+	.string "MAMA: Hier, bitte sehr!$"
 
 NewBarkTown_PlayersHouse_1F_Text_NoMoneyToDeposit:
-	.string "MOM: You don't have any money to\n"
-	.string "deposit right now, sweetie.$"
+	.string "MAMA: Du hast gar kein Geld, das ich\n"
+	.string "für dich sparen könnte, Liebgling.$"
 
 NewBarkTown_PlayersHouse_1F_Text_NoMoneyToWithdraw:
-	.string "MOM: I haven't saved any money\n"
-	.string "for you yet, honey.$"
+	.string "MAMA: Ich habe noch kein Geld\n"
+	.string "für dich gespart, mein Schatz.$"
 
 NewBarkTown_PlayersHouse_1F_EventScript_MomsIntroTrigger1::
 	lock
@@ -296,55 +296,55 @@ NewBarkTown_PlayersHouse_1F_MovementFaceLeft:
 	step_end
 
 NewBarkTown_PlayersHouse_1F_Text_ElmsLookingForYou:
-	.string "Oh, {PLAYER}…! Our neighbor,\n"
-	.string "PROF.ELM, was looking for you.\p"
-	.string "He said he wanted you to do\n"
-	.string "something for him.\p"
-	.string "Oh! I almost forgot! Your POKéGEAR\n"
-	.string "is back from the repair shop.\p"
-	.string "Here you go!$"
+	.string "Oh, {PLAYER}…! Unser Nachbar,\n"
+	.string "PROF. LIND, hat nach dir gesucht.\p"
+	.string "Er möchte, dass du etwas\n"
+	.string "für ihn erledigst.\p"
+	.string "Oh! Fast hätte ich es vergessen! Dein\n"
+	.string "POKéCOM ist von der Reparatur zurück.\p"
+	.string "Da hast du ihn!$"
 
 NewBarkTown_PlayersHouse_1F_Text_ObtainedPokeGear:
-	.string "{PLAYER} obtained the POKéGEAR.$"
+	.string "{PLAYER} erhält POKéCOM.$"
 
 NewBarkTown_PlayersHouse_1F_Text_ExplainPokeGear:
-	.string "MOM: Phone numbers are stored\n"
-	.string "in memory.\p"
-	.string "Just choose a name you want to call.\p"
-	.string "Gee, isn't that convenient?$"
+	.string "MAMA: Telefonnummern werden gespeichert.\n"
+	.string "Wähle einfach den Namen der Person,\p"
+	.string "die du anrufen möchtest.\p"
+	.string "Ist das nicht praktisch?$"
 
 NewBarkTown_PlayersHouse_1F_Text_WearTheseRunningShoes:
-	.string "Oh, and don't forget your\n"
-	.string "RUNNING SHOES!$"
+	.string "Oh, und vergiss nicht deine\n"
+	.string "TURBOTRETER!$"
 
 NewBarkTown_PlayersHouse_1F_Text_SwitchShoesWithRunningShoes:
-	.string "{PLAYER} switched shoes with the\n"
-	.string "RUNNING SHOES.$"
+	.string "{PLAYER} schlüpft in die neuen\n"
+	.string "TURBOTRETER.$"
 
 NewBarkTown_PlayersHouse_1F_Text_ExplainRunningShoes:
-	.string "MOM: {PLAYER}, press the B Button\n"
-	.string "while wearing these to run fast!$"
+	.string "MAMA: {PLAYER}, drücke den B Knopf\n"
+	.string "um mit den TURBOTRETERn zu rennen!$"
 
 NewBarkTown_PlayersHouse_1F_Text_MomHurryUpElmIsWaiting:
-	.string "MOM: PROF.ELM is waiting for you.\p"
-	.string "Hurry up, baby!$"
+	.string "MAMA: PROF. LIND wartet auf dich.\p"
+	.string "Beeile dich, Baby!$"
 
 NewBarkTown_PlayersHouse_1F_Text_MomsFriend:
-	.string "Hi, {PLAYER}!\p"
-	.string "I'm visiting!\p"
-	.string "Have you heard?\p"
-	.string "My daughter is adamant about\n"
-	.string "becoming PROF.ELM's assistant.\p"
-	.string "She really loves POKéMON!$"
+	.string "Hallo, {PLAYER}!\p"
+	.string "Ich bin zu Besuch!\p"
+	.string "Hast du schon gehört?\p"
+	.string "Meine Tochter will unbedingt\n"
+	.string "PROF. LINDs Assistentin werden.\p"
+	.string "Sie liebt POKéMON von ganzem Herzen!$"
 
 NewBarkTown_PlayersHouse_1F_Text_MomLeaving:
-	.string "MOM: Wow, that's a cute POKéMON.\n"
-	.string "Where did you get it?\p"
+	.string "MAMA: Das ist ein niedliches POKéMON.\n"
+	.string "Wo hast du es her??\p"
 	.string "…\p"
-	.string "So, you're leaving on an adventure...\n"
-	.string "That does sound challenging...\p"
-	.string "Just be careful.\p"
-	.string "POKéMON are your friends.\n"
-	.string "You need to work as a team.\p"
-	.string "Now, go on!\n"
-	.string "I'm behind you all the way!$"
+	.string "Du beginnst also ein Abenteuer...\n"
+	.string "Das klingt herausfordernd...\p"
+	.string "Sei auf der Hut.\p"
+	.string "POKéMON sind deine Kameraden.\n"
+	.string "Ihr müsst als Team auftreten.\p"
+	.string "Also, mach's gut!\n"
+	.string "Ich stehe immer hinter dir!$"

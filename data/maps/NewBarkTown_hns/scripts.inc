@@ -247,7 +247,7 @@ NewBarkTown_Text_LassState2:
 	.string "Es ist gefährlich, ohne\n"
 	.string "POKéMON das Haus zu verlassen!\p"
 	.string "Auf dem Weg zur nächsten Stadt\n"
-	.string "können jederzeit wilde POKéMON\n"
+	.string "können jederzeit wilde POKéMON\l"
 	.string "auftauchen.$"
 
 NewBarkTown_Text_LassState3:

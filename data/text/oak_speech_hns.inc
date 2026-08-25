@@ -8,6 +8,7 @@ gText_Oak_Welcome::
 
 gText_Oak_Pokemon::
 	.string "Das ist ein sogenanntes “POKéMON”.{PAUSE 96}\p"
+	.string "\n"
 	.string "$"
 
 gText_Oak_MainSpeech::
@@ -36,17 +37,17 @@ gText_Oak_WhatChallenge::
 	.string "erwartest du?$"
 
 gText_Oak_ChallengeSelected::
-	.string "Das klingt für mich nach\n"
-	.string "genau dem richtigen Niveau!$"
+	.string "Das klingt für mich nach genau\n"
+	.string "dem richtigen Niveau!$"
 
 gText_Oak_ChallengeDisclaimer::
 	.string "Welche Art Herausforderung\n"
 	.string "erwartest du?\p"
-	.string "{COLOR RED}Die folgenden Einstellungen können später\n"
-	.string " am PC geändert werden.\l"
-	.string "Du kannst die Einstellungen zu Nuzlocke\l"
-	.string "Randomisierer, Schwierigkeit und\l"
-	.string "Herausforderungen nur einfacher\l"
+	.string "{COLOR RED}Die folgenden Einstellungen können\n"
+	.string "später am PC geändert werden.\l"
+	.string "Du kannst die Einstellungen für\l"
+	.string "Nuzlocke, Randomisierer, Schwierigkeit\l"
+	.string "und Herausforderungen nur einfacher\l"
 	.string "stellen, nicht schwerer.$"
 
 gText_Oak_WhatsYourName::
@@ -65,7 +66,7 @@ gText_Oak_AreYouReady::
 	.string "Dich erwarten tolle Dinge,\n"
 	.string "aber auch harte Zeiten.\p"
 	.string "Eine Welt voller Träume und\n"
-	.string "aufregender POKéMON-Abenteuer\n"
+	.string "aufregender POKéMON-Abenteuer\l"
 	.string "erwartet dich! Mach dich bereit!\p"
 	.string "Ich treffe dich später!\p"
 	.string "$"
