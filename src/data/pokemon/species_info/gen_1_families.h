@@ -31,7 +31,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 7,
         .weight = 69,
         .description = COMPOUND_STRING(
-            "BISASAM macht gerne einmal ein Nickerchen
+            "BISASAM macht gerne einmal ein Nickerchen\n"
             "im Sonnenschein. Auf seinem Rücken trägt es einen Samen.\n"
             "Indem es Sonnenstrahlen aufsaugt, \n"
             "wird der Samen stetig Größer"
@@ -103,8 +103,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 10,
         .weight = 130,
         .description = COMPOUND_STRING(
-            "Die Beine von BISAKNOSP sind kräftig,\n"
-            "da sie die Knospe tragen müssen.\n"
+            "Die Beine von BISAKNOSP sind kräftig im\n"
+            "Wuchs, da sie die Knospe tragen müssen.\n"
             "Wenn es lange in der Sonne liegt,\n"
             "beginnt die Knospe bald zu blühen."),
         .pokemonScale = 335,
