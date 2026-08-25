@@ -609,17 +609,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("TOTODILE"),
+        .speciesName = _("KARNIMANI"),
         .cryId = CRY_TOTODILE,
         .natDexNum = NATIONAL_DEX_TOTODILE,
-        .categoryName = _("Big Jaw"),
+        .categoryName = _("Großmaul"),
         .height = 6,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Despite its small body, Totodile's jaws\n"
-            "are very powerful. While it may think it is\n"
-            "just playfully nipping, its bite has enough\n"
-            "strength to cause serious injury."),
+            "KARNIMANI ist zwar sehr klein, aber seine\n"
+            "Kiefer sind sehr stark. Es denkt, dass es\n"
+            "nur spielerisch knabbert, aber sein Biss\n"
+            "kann zu schweren Verletzungen führen."),
         .pokemonScale = 487,
         .pokemonOffset = 20,
         .trainerScale = 256,

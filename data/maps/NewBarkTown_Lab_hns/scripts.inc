@@ -656,10 +656,9 @@ NewBarkTown_Lab_Text_ShouldntTouch:
 NewBarkTown_Lab_Text_ElmIntro:
 	.string "LIND: {PLAYER}! Da bist du ja!\p"
 	.string "Ich muss dich um etwas bitten.\p"
-	.string "Ich führe gerade neue POKéMON-\n"
-	.string "Forschungen durch. Ich habe\l"
-	.string "mich gefragt, ob du mir\l"
-	.string "dabei hilfst, {PLAYER}.\p"
+	.string "Ich führe gerade neue POKéMON-Forschungen\n"
+	.string "durch. Ich habe mich gefragt, ob du\l"
+	.string "mir dabei hilfst, {PLAYER}.\p"
 	.string "Verstehst du…\p"
 	.string "Ich schreibe an etwas, das ich bei\n"
 	.string "einer Konferenz vorlegen möchte.\p"
@@ -692,8 +691,8 @@ NewBarkTown_Lab_Text_ElmGotAnEmail:
 
 NewBarkTown_Lab_Text_ElmMissionFromMrPokemon:
 	.string "Hör gut zu!\p"
-	.string "Ich habe einen Bekannten\n"
-	.string "namens MR. POKéMON.\p"
+	.string "Ich habe einen Bekannten namens\n"
+	.string "MR. POKéMON.\p"
 	.string "Ständig findet er eigenartiges Zeugs\n"
 	.string "und fängt an darüber zu fantasieren.\p"
 	.string "Aber jetzt hat er mir eine E-Mail\n"
@@ -701,7 +700,7 @@ NewBarkTown_Lab_Text_ElmMissionFromMrPokemon:
 	.string "diesmal um etwas Großes handeln muss.\p"
 	.string "Das klingt zwar faszinierend, aber\n"
 	.string "wir sind derzeit mitten in unseren\l"
-	.string "eigenen POKéMON-Forschungen."
+	.string "eigenen POKéMON-Forschungen.\p"
 	.string "Moment!\n"
 	.string "Ich hab's!\p"
 	.string "{PLAYER}, könntest du der Sache\n"
@@ -720,17 +719,16 @@ NewBarkTown_Lab_Text_ElmWhereGoing:
 	.string "Wohin gehst du?$"
 
 NewBarkTown_Lab_Text_ChooseCyndaquil:
-	.string "LIND: Willst du {COLOR RED}{STR_VAR_1}{COLOR DARK_GRAY},\n"
-	.string "das {COLOR RED}{STR_VAR_2}{COLOR DARK_GRAY} POKéMON?$"
+	.string "LIND: Willst du {COLOR RED}{STR_VAR_1}{COLOR DARK_GRAY}, das\n"
+	.string "{STR_VAR_2} POKéMON?$"
 
 NewBarkTown_Lab_Text_ChooseTotodile:
-	.string "LIND: Wählst du {COLOR BLUE}{STR_VAR_1}{COLOR DARK_GRAY},\n"
-	.string "das {COLOR BLUE}{STR_VAR_2}{COLOR DARK_GRAY} POKéMON?$"
+	.string "LIND: Wählst du {COLOR BLUE}{STR_VAR_1}{COLOR DARK_GRAY}, das\n"
+	.string "{STR_VAR_2} POKéMON?$"
 
 NewBarkTown_Lab_Text_ChooseChikorita:
-	.string "LIND: Entscheidest du dich\l"
-	.string "für {COLOR GREEN}{STR_VAR_1}{COLOR DARK_GRAY}, das \n"
-	.string "{COLOR GREEN}{STR_VAR_2}{COLOR DARK_GRAY} POKéMON?$"
+	.string "LIND: Entscheidest du dich für\n"
+	.string "{COLOR GREEN}{STR_VAR_1}{COLOR DARK_GRAY}, das {STR_VAR_2} POKéMON?$"
 
 NewBarkTown_Lab_Text_DidntChooseStarter:
 	.string "LIND: Überlege es dir gut!\p"
