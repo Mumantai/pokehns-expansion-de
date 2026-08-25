@@ -35,6 +35,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "im Sonnenschein. Auf seinem Rücken trägt es einen Samen.\n"
             "Indem es Sonnenstrahlen aufsaugt, \n"
             "wird der Samen stetig Größer"
+        ),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

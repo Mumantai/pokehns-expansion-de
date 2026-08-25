@@ -311,17 +311,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_FLASH_FIRE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("CYNDAQUIL"),
+        .speciesName = _("FEURIGEL"),
         .cryId = CRY_CYNDAQUIL,
         .natDexNum = NATIONAL_DEX_CYNDAQUIL,
-        .categoryName = _("Fire Mouse"),
+        .categoryName = _("Feuermaus"),
         .height = 5,
         .weight = 79,
         .description = COMPOUND_STRING(
-            "It flares flames from its back to protect\n"
-            "itself. The fire burns vigorously if the\n"
-            "Pokémon is angry. When it is tired,\n"
-            "it sputters with incomplete combustion."),
+            "FEURIGEL lässt Flammen aus seinem Rücken\n"
+            "lodern, um sich zu schützen. Sie sind sehr\n"
+            "groß, wenn es wütend ist, aber klein, wenn\n"
+            "es müde und erschöpft ist."),
         .pokemonScale = 539,
         .pokemonOffset = 21,
         .trainerScale = 256,
