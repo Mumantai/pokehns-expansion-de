@@ -24,17 +24,17 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
-        .speciesName = _("BULBASAUR"),
+        .speciesName = _("BISASAM"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BULBASAUR,
-        .categoryName = _("Seed"),
+        .categoryName = _("Samen"),
         .height = 7,
         .weight = 69,
         .description = COMPOUND_STRING(
-            "Bulbasaur can be seen napping in bright\n"
-            "sunlight. There is a seed on its back.\n"
-            "By soaking up the sun's rays, the seed\n"
-            "grows progressively larger."),
+            "BISASAM macht gerne einmal ein Nickerchen
+            "im Sonnenschein. Auf seinem Rücken trägt es einen Samen.\n"
+            "Indem es Sonnenstrahlen aufsaugt, \n"
+            "wird der Samen stetig Größer"
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
