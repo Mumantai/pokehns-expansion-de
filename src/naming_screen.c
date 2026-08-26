@@ -212,7 +212,7 @@ static const u8 *const sTransferredToPCMessages[] =
 };
 
 
-static const u8 sText_RivalsName[] = _("RIVAL's NAME?");
+static const u8 sText_RivalsName[] = _("NAME DES RIVALEN?");
 static const u8 sText_AlphabetUpperLower[] = _("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!");
 
 static const struct BgTemplate sBgTemplates[] =
@@ -2282,7 +2282,7 @@ static const struct NamingScreenTemplate sPlayerNamingScreenTemplate =
     .addGenderIcon = FALSE,
     .initialPage = KBPAGE_LETTERS_UPPER,
     .unused = 35,
-    .title = COMPOUND_STRING("YOUR NAME?"),
+    .title = COMPOUND_STRING("DEIN NAME?"),
 };
 
 static const struct NamingScreenTemplate sPCBoxNamingTemplate =
@@ -2304,7 +2304,7 @@ static const struct NamingScreenTemplate sMonNamingScreenTemplate =
     .addGenderIcon = TRUE,
     .initialPage = KBPAGE_LETTERS_UPPER,
     .unused = 35,
-    .title = COMPOUND_STRING("{STR_VAR_1}'s nickname?"),
+    .title = COMPOUND_STRING("KOSENAME F. {STR_VAR_1}"),
 };
 
 static const struct NamingScreenTemplate sWaldaWordsScreenTemplate =
