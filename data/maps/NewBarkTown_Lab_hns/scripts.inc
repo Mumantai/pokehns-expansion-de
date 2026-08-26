@@ -656,7 +656,7 @@ NewBarkTown_Lab_Text_ShouldntTouch:
 NewBarkTown_Lab_Text_ElmIntro:
 	.string "LIND: Ah, da bist du ja, {PLAYER}!\p"
 	.string "Ich muss dich um etwas bitten.\p"
-	.string "Ich führe gerade neue POKéMON-Forschungen\n"
+	.string "Ich führe gerade neue Forschungen\n"
 	.string "durch und habe mich gefragt, ob du mir\l"
 	.string "dabei helfen möchtest, {PLAYER}.\p"
 	.string "Verstehst du…\p"
@@ -717,7 +717,8 @@ NewBarkTown_Lab_Text_ElmChooseAPokemon:
 
 NewBarkTown_Lab_Text_ElmWhereGoing:
 	.string "LIND: Warte! Wo willst du denn hin?\n"
-	.string "Die POKéBÄLLE befinden sich doch gleich hier.$"
+	.string "Die POKéBÄLLE befinden sich\l"
+	.string "doch gleich hier.$"
 
 NewBarkTown_Lab_Text_ChooseCyndaquil:
 	.string "LIND: Willst du {COLOR RED}{STR_VAR_1}{COLOR DARK_GRAY}, das\n"
