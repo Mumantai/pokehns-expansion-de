@@ -8,13 +8,13 @@ const u8 gText_EasyChatKeyboard_TUVWXYZ[] = _("{CLEAR 11}T{CLEAR 6}U{CLEAR 6}V{C
 
 // Naming Screen keyboard
 const u8 gText_NamingScreenKeyboard_abcdef[] = _("{CLEAR 11}a{CLEAR 6}b{CLEAR 6}c{CLEAR 6}d{CLEAR 20}e{CLEAR 6}f{CLEAR 7}g{CLEAR 6}h{CLEAR 21}.");
-const u8 gText_NamingScreenKeyboard_ghijkl[] = _("{CLEAR 12}i{CLEAR 7}j{CLEAR 7}k{CLEAR 7}l{CLEAR 21}m{CLEAR 6}n{CLEAR 6}o{CLEAR 6}p{CLEAR 21},");
-const u8 gText_NamingScreenKeyboard_mnopqrs[] = _("{CLEAR 11}q{CLEAR 7}r{CLEAR 7}s{CLEAR 6}t{CLEAR 19}u{CLEAR 7}v{CLEAR 6}w{CLEAR 6}x{CLEAR 21} ");
+const u8 gText_NamingScreenKeyboard_ghijkl[] = _("{CLEAR 12}i{CLEAR 7}j{CLEAR 7}k{CLEAR 7}l{CLEAR 21}m{CLEAR 6}n{CLEAR 6}o{CLEAR 6}p{CLEAR 22},");
+const u8 gText_NamingScreenKeyboard_mnopqrs[] = _("{CLEAR 11}q{CLEAR 7}r{CLEAR 6}s{CLEAR 6}t{CLEAR 20}u{CLEAR 6}v{CLEAR 6}w{CLEAR 6}x{CLEAR 21} ");
 const u8 gText_NamingScreenKeyboard_tuvwxyz[] = _("{CLEAR 11}y{CLEAR 6}z{CLEAR 44}ä{CLEAR 6}ö{CLEAR 6}ü{CLEAR 6}ß{CLEAR 6} {CLEAR 21} ");
 
-const u8 gText_NamingScreenKeyboard_ABCDEF[] = _("{CLEAR 11}A{CLEAR 6}B{CLEAR 6}C{CLEAR 6}D{CLEAR 20}E{CLEAR 6}F{CLEAR 6}G{CLEAR 6}H{CLEAR 21}.");
-const u8 gText_NamingScreenKeyboard_GHIJKL[] = _("{CLEAR 11}I{CLEAR 6}J{CLEAR 6}K{CLEAR 6}L{CLEAR 20}M{CLEAR 6}N{CLEAR 6}O{CLEAR 6}P{CLEAR 21},");
-const u8 gText_NamingScreenKeyboard_MNOPQRS[] = _("{CLEAR 11}Q{CLEAR 6}R{CLEAR 6}S{CLEAR 6}T{CLEAR 20}U{CLEAR 6}V{CLEAR 6}W{CLEAR 6}X{CLEAR 21} ");
+const u8 gText_NamingScreenKeyboard_ABCDEF[] = _("{CLEAR 11}A{CLEAR 6}B{CLEAR 6}C{CLEAR 6}D{CLEAR 20}E{CLEAR 6}F{CLEAR 6}G{CLEAR 6}H{CLEAR 22}.");
+const u8 gText_NamingScreenKeyboard_GHIJKL[] = _("{CLEAR 11}I{CLEAR 6}J{CLEAR 6}K{CLEAR 6}L{CLEAR 20}M{CLEAR 6}N{CLEAR 6}O{CLEAR 6}P{CLEAR 22},");
+const u8 gText_NamingScreenKeyboard_MNOPQRS[] = _("{CLEAR 11}Q{CLEAR 6}R{CLEAR 6}S{CLEAR 6}T{CLEAR 20}U{CLEAR 6}V{CLEAR 6}W{CLEAR 6}X{CLEAR 22} ");
 const u8 gText_NamingScreenKeyboard_TUVWXYZ[] = _("{CLEAR 11}Y{CLEAR 6}Z{CLEAR 44}Ä{CLEAR 6}Ö{CLEAR 6}Ü{CLEAR 30} ");
 
 const u8 gText_NamingScreenKeyboard_01234[] = _("{CLEAR 11}0{CLEAR 16}1{CLEAR 16}2{CLEAR 16}3{CLEAR 16}4{CLEAR 16} ");
