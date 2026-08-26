@@ -7,9 +7,9 @@ const u8 gText_EasyChatKeyboard_MNOPQRS[] = _("{CLEAR 11}M{CLEAR 6}N{CLEAR 6}O{C
 const u8 gText_EasyChatKeyboard_TUVWXYZ[] = _("{CLEAR 11}T{CLEAR 6}U{CLEAR 6}V{CLEAR 26}W{CLEAR 6}X{CLEAR 6}Y{CLEAR 6}Z{CLEAR 26} ");
 
 // Naming Screen keyboard
-const u8 gText_NamingScreenKeyboard_abcdef[] = _("{CLEAR 11}a{CLEAR 6}b{CLEAR 6}c{CLEAR 6}d{CLEAR 20}e{CLEAR 7}f{CLEAR 6}g{CLEAR 6}h{CLEAR 21}.");
-const u8 gText_NamingScreenKeyboard_ghijkl[] = _("{CLEAR 12}i{CLEAR 7}j{CLEAR 7}k{CLEAR 7}l{CLEAR 21}m{CLEAR 7}n{CLEAR 6}o{CLEAR 6}p{CLEAR 21},");
-const u8 gText_NamingScreenKeyboard_mnopqrs[] = _("{CLEAR 11}q{CLEAR 7}r{CLEAR 7}s{CLEAR 7}t{CLEAR 20}u{CLEAR 7}v{CLEAR 6}w{CLEAR 6}x{CLEAR 21} ");
+const u8 gText_NamingScreenKeyboard_abcdef[] = _("{CLEAR 11}a{CLEAR 6}b{CLEAR 6}c{CLEAR 6}d{CLEAR 20}e{CLEAR 6}f{CLEAR 7}g{CLEAR 6}h{CLEAR 21}.");
+const u8 gText_NamingScreenKeyboard_ghijkl[] = _("{CLEAR 12}i{CLEAR 7}j{CLEAR 7}k{CLEAR 7}l{CLEAR 21}m{CLEAR 6}n{CLEAR 6}o{CLEAR 6}p{CLEAR 21},");
+const u8 gText_NamingScreenKeyboard_mnopqrs[] = _("{CLEAR 11}q{CLEAR 7}r{CLEAR 7}s{CLEAR 6}t{CLEAR 19}u{CLEAR 7}v{CLEAR 6}w{CLEAR 6}x{CLEAR 21} ");
 const u8 gText_NamingScreenKeyboard_tuvwxyz[] = _("{CLEAR 11}y{CLEAR 6}z{CLEAR 44}ä{CLEAR 6}ö{CLEAR 6}ü{CLEAR 6}ß{CLEAR 6} {CLEAR 21} ");
 
 const u8 gText_NamingScreenKeyboard_ABCDEF[] = _("{CLEAR 11}A{CLEAR 6}B{CLEAR 6}C{CLEAR 6}D{CLEAR 20}E{CLEAR 6}F{CLEAR 6}G{CLEAR 6}H{CLEAR 21}.");
