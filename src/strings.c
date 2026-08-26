@@ -1275,8 +1275,8 @@ const u8 gText_Earthbadge[] = _("ERDORDEN");
 const u8 gText_OakImportantToGetToKnowPokemonThroughly[] = _("OAK: It's important to get to know\nyour POKéMON thoroughly.\p");
 const u8 gText_OakThisIsListOfPokemon[] = _("This is a list of your POKéMON,\n{PLAYER}.\pOpen this to check the skills\nand moves of your POKéMON.\pYou also choose POKéMON here if\nyou want to use an item on one.{PAUSE_UNTIL_PRESS}");
 
-const u8 gText_GBPlayerOn[] = _("GB-Player wurde eingeschaltet!\nKlänge der Vergangenheit füllen den Äther.{PAUSE_UNTIL_PRESS}");
-const u8 gText_GBPlayerOff[] = _("GB-Player wurde ausgeschaltet!\nDie Klänge der Vergangenheit klingen ab.{PAUSE_UNTIL_PRESS}");
+const u8 gText_GBPlayerOn[] = _("GB-Player wurde eingeschaltet!\nTöne der Vergangenheit erklingen.{PAUSE_UNTIL_PRESS}");
+const u8 gText_GBPlayerOff[] = _("GB-Player wurde ausgeschaltet!\nDie Töne der Vergangenheit klingen ab.{PAUSE_UNTIL_PRESS}");
 
 const u8 gText_Sunday[] = _("SONNTAG");
 const u8 gText_Monday[] = _("MONTAG");
