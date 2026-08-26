@@ -225,7 +225,7 @@ NewBarkTown_Movement_FaceDown:
 	step_end
 
 NewBarkTown_Text_LabSign:
-	.string "LIND POKéMON-LABOR$"
+	.string "PROF. LINDs POKéMON-LABOR$"
 
 NewBarkTown_Text_Door:
 	.string "Die Tür ist verschlossen.$"
@@ -235,7 +235,7 @@ NewBarkTown_Text_Wooper:
 
 NewBarkTown_Text_FatManState2:
 	.string "Wow, dein POKéCOM ist beeindruckend!\n"
-	.string "Hast du den von Mama bekommen?$"
+	.string "Hast du den von deiner Mutter bekommen?$"
 
 NewBarkTown_Text_FatManState3:
 	.string "Yo, {PLAYER}!\p"
@@ -244,11 +244,11 @@ NewBarkTown_Text_FatManState3:
 
 NewBarkTown_Text_LassState2:
 	.string "Warte, {PLAYER}!\p"
-	.string "Es ist gefährlich, ohne\n"
+	.string "Es ist gefährlich, ohne eigene\n"
 	.string "POKéMON das Haus zu verlassen!\p"
 	.string "Auf dem Weg zur nächsten Stadt\n"
-	.string "können jederzeit wilde POKéMON\l"
-	.string "auftauchen.$"
+	.string "können dich jederzeit wilde\l"
+	.string "POKéMON angreifen.$"
 
 NewBarkTown_Text_LassState3:
 	.string "Oh! Dein POKéMON ist bezaubernd!\n"
@@ -256,7 +256,7 @@ NewBarkTown_Text_LassState3:
 
 NewBarkTown_Text_LassState4:
 	.string "Hi, {PLAYER}! Du gehst schon?\p"
-	.string "Gib deiner Mama Bescheid,\n"
+	.string "Gib besser deiner Mama Bescheid,\n"
 	.string "wenn du gehst.$"
 
 NewBarkTown_Text_LassState5:
@@ -264,9 +264,9 @@ NewBarkTown_Text_LassState5:
 	.string "an, damit sie weiß, was du machst.$\p"
 
 NewBarkTown_Text_Silver1:
-	.string ". . .\p"
+	.string "…\p"
 	.string "Das ist also das berühmte\n"
-	.string "LIND-POKéMON-LABOR…$"
+	.string "POKéMON-LABOR von PROF. LIND…$"
 
 NewBarkTown_Text_Silver2:
 	.string "…Was starrst du so?$"

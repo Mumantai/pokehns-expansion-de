@@ -24,7 +24,7 @@ NewBarkTown_House1_Text_NeighborsDaughter:
 	.string "Er ist berühmt für seine Forschungen\n"
 	.string "auf dem Gebiet der POKéMON-Evolution.\p"
 	.string "…Seufz…\p"
-	.string "Ich wünschte, ich wäre ein Forscher\n"
+	.string "Ich wünschte, ich wäre auch ein Forscher\n"
 	.string "wie er…$"
 
 
@@ -32,5 +32,5 @@ NewBarkTown_House1_Text_Neighbor:
 	.string "Meine Tochter will unbedingt\n"
 	.string "PROF. LINDs Assistentin werden.\p"
 	.string "Sie liebt POKéMON! von ganzem Herzen!\p"
-	.string "Aber ich auch!$"
+	.string "Aber das tue ich auch!$"
 
