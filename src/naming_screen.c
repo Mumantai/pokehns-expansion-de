@@ -323,8 +323,8 @@ static const u8 sPageColumnCounts[KBPAGE_COUNT] = {
 };
 // Numbers equal the jump in pixels the cursor takes (12 pixels = 6 pixels letter width + 6 pixels space)
 static const u8 sPageColumnXPos[KBPAGE_COUNT][KBCOL_COUNT] = {
-    [KEYBOARD_LETTERS_LOWER] = {0, 12, 24, 36, 62, 64, 76, 88, 109},
-    [KEYBOARD_LETTERS_UPPER] = {0, 12, 24, 36, 62, 64, 76, 88, 109},
+    [KEYBOARD_LETTERS_LOWER] = {0, 12, 24, 36, 62, 74, 86, 98, 119},
+    [KEYBOARD_LETTERS_UPPER] = {0, 12, 24, 36, 62, 74, 86, 98, 119},
     [KEYBOARD_SYMBOLS]       = {0, 22, 44, 66, 88, 110}
 };
 
