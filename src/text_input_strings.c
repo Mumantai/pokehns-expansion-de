@@ -12,10 +12,10 @@ const u8 gText_NamingScreenKeyboard_ghijkl[] = _("{CLEAR 11}g{CLEAR 6}h{CLEAR 7}
 const u8 gText_NamingScreenKeyboard_mnopqrs[] = _("{CLEAR 11}m{CLEAR 6}n{CLEAR 6}o{CLEAR 26}p{CLEAR 6}q{CLEAR 7}r{CLEAR 6}s{CLEAR 27} ");
 const u8 gText_NamingScreenKeyboard_tuvwxyz[] = _("{CLEAR 11}t{CLEAR 6}u{CLEAR 6}v{CLEAR 26}w{CLEAR 6}x{CLEAR 6}y{CLEAR 6}z{CLEAR 26} ");
 
-const u8 gText_NamingScreenKeyboard_ABCDEF[] = _("{CLEAR 11}A{CLEAR 6}B{CLEAR 6}C{CLEAR 6}D{CLEAR 26}E{CLEAR 6}F{CLEAR 6}G{CLEAR 6}H{CLEAR 26}.");
-const u8 gText_NamingScreenKeyboard_GHIJKL[] = _("{CLEAR 11}I{CLEAR 6}J{CLEAR 6}K{CLEAR 6}L{CLEAR 26}M{CLEAR 6}N{CLEAR 6}O{CLEAR 6}P{CLEAR 26},");
-const u8 gText_NamingScreenKeyboard_MNOPQRS[] = _("{CLEAR 11}Q{CLEAR 6}R{CLEAR 6}S{CLEAR 6}T{CLEAR 26}U{CLEAR 6}V{CLEAR 6}W{CLEAR 6}X{CLEAR 26} ");
-const u8 gText_NamingScreenKeyboard_TUVWXYZ[] = _("{CLEAR 11}Y{CLEAR 6}Z{CLEAR 26}Ä{CLEAR 6}Ö{CLEAR 6}Ü{CLEAR 30} ");
+const u8 gText_NamingScreenKeyboard_ABCDEF[] = _("{CLEAR 11}A{CLEAR 6}B{CLEAR 6}C{CLEAR 6}D{CLEAR 20}E{CLEAR 6}F{CLEAR 6}G{CLEAR 6}H{CLEAR 26}.");
+const u8 gText_NamingScreenKeyboard_GHIJKL[] = _("{CLEAR 11}I{CLEAR 6}J{CLEAR 6}K{CLEAR 6}L{CLEAR 20}M{CLEAR 6}N{CLEAR 6}O{CLEAR 6}P{CLEAR 26},");
+const u8 gText_NamingScreenKeyboard_MNOPQRS[] = _("{CLEAR 11}Q{CLEAR 6}R{CLEAR 6}S{CLEAR 6}T{CLEAR 20}U{CLEAR 6}V{CLEAR 6}W{CLEAR 6}X{CLEAR 26} ");
+const u8 gText_NamingScreenKeyboard_TUVWXYZ[] = _("{CLEAR 11}Y{CLEAR 6}Z{CLEAR 20}Ä{CLEAR 6}Ö{CLEAR 6}Ü{CLEAR 30} ");
 
 const u8 gText_NamingScreenKeyboard_01234[] = _("{CLEAR 11}0{CLEAR 16}1{CLEAR 16}2{CLEAR 16}3{CLEAR 16}4{CLEAR 16} ");
 const u8 gText_NamingScreenKeyboard_56789[] = _("{CLEAR 11}5{CLEAR 16}6{CLEAR 16}7{CLEAR 16}8{CLEAR 16}9{CLEAR 16} ");
