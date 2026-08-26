@@ -46,7 +46,7 @@ enum {
 };
 
 #define KBROW_COUNT 4
-#define KBCOL_COUNT 8
+#define KBCOL_COUNT 9
 
 enum {
     GFXTAG_BACK_BUTTON,
