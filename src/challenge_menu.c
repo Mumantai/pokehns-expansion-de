@@ -1117,7 +1117,7 @@ static const u8 *const sDesc_Expensive[] = {
 };
 static const u8 *const sDesc_EvoLimit[] = {
     COMPOUND_STRING("{PKMN} entwickeln sich wie\ngewohnt."),
-    COMPOUND_STRING("{PKMN} können sich nur in ihre\erste Stufe entwickeln."),
+    COMPOUND_STRING("{PKMN} können sich nur in ihre\nerste Stufe entwickeln."),
     COMPOUND_STRING("{PKMN} können sich nicht entwickeln!"),
 };
 #define NUM_ONE_TYPE_CHOICES 20
