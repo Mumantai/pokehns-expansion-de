@@ -90,6 +90,17 @@ u8 ScriptGiveEgg(u16 species)
     isEgg = TRUE;
     SetMonData(&mon, MON_DATA_IS_EGG, &isEgg);
 
+    // tx_randomizer_and_challenges: with a party limit of 1 the only party slot is
+    // always taken, and handing the Egg over would leave the player with a party of
+    // just an Egg. Send it straight to the PC instead of refusing the gift.
+    if (GetMaxPartySize() == 1)
+    {
+        SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+        SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+        SetMonData(&mon, MON_DATA_OT_ID, gSaveBlock2Ptr->playerTrainerId);
+        return CopyMonToPC(&mon);
+    }
+
     return GiveCapturedMonToPlayer(&mon);
 }
 
@@ -167,11 +178,12 @@ void CreateShinyScriptedMon(u16 species, u8 level, enum Item item)
 {
     u8 heldItem[2];
 
-    // TODO: HnS challenge mode hooks (needs tx_Random_* / tx_Challenges SaveBlock fields)
-    // if (gSaveBlock1Ptr->tx_Random_Static)
-    //     species = GetSpeciesRandomSeeded(species, TX_RANDOM_T_STATIC, 0);
-    // if (gSaveBlock1Ptr->tx_Random_Items)
-    //     item = RandomItemId(item);
+    #if RANDOMIZER_AVAILABLE
+    if (RandomizerFeatureEnabled(RANDOMIZE_FIXED_MON))
+        species = RandomizeMon(RANDOMIZER_REASON_FIXED_ENCOUNTER, GetRandomizerOption(RANDOMIZER_OPTION_SPECIES_MODE), Random32(), species);
+    #endif
+
+    // TODO: item randomization (HnS randomized the held item under tx_Random_Items)
 
     ZeroEnemyPartyMons();
 

@@ -222,7 +222,7 @@ static const u8 sMidGameLockPolicy[TAB_COUNT * MAX_ITEMS_PER_TAB] = {
     [TAB_CHALLENGES * MAX_ITEMS_PER_TAB + ITEM_CHALLENGES_POKECENTER]    = LOCK_ONEWAY_DOWN,
     [TAB_CHALLENGES * MAX_ITEMS_PER_TAB + ITEM_CHALLENGES_EXPENSIVE]     = LOCK_ONEWAY_DOWN,
     [TAB_CHALLENGES * MAX_ITEMS_PER_TAB + ITEM_CHALLENGES_EVO_LIMIT]     = LOCK_ONEWAY_DOWN,
-    [TAB_CHALLENGES * MAX_ITEMS_PER_TAB + ITEM_CHALLENGES_ONE_TYPE]      = LOCK_ONEWAY_DOWN,
+    [TAB_CHALLENGES * MAX_ITEMS_PER_TAB + ITEM_CHALLENGES_ONE_TYPE]      = LOCK_FREE,
     [TAB_CHALLENGES * MAX_ITEMS_PER_TAB + ITEM_CHALLENGES_BST_EQUALIZER] = LOCK_ONEWAY_DOWN,
     [TAB_CHALLENGES * MAX_ITEMS_PER_TAB + ITEM_CHALLENGES_MIRROR]        = LOCK_ONEWAY_DOWN,
     [TAB_CHALLENGES * MAX_ITEMS_PER_TAB + ITEM_CHALLENGES_MIRROR_THIEF]  = LOCK_ONEWAY_DOWN,
@@ -430,7 +430,7 @@ static const struct ChallengeMenuItem sTabItems_Mode[] = {
         .choiceNames  = sChoices_Gamemode,
     },
     [ITEM_MODE_MODERN_MOVES] = {
-        .name         = COMPOUND_STRING("{PKMN} MOVEPOOL"),
+        .name         = COMPOUND_STRING("{PKMN}-MOVEPOOL"),
         .descriptions = sDesc_ModernMoves,
         .numChoices   = 2,
         .choiceNames  = sChoices_Gen3Gen7,
@@ -1119,6 +1119,7 @@ static const u8 *const sDesc_EvoLimit[] = {
 };
 #define NUM_ONE_TYPE_CHOICES 20
 #define ONE_TYPE_OFF 31
+#define EVO_LINE_TYPE_SEARCH_DEPTH 4 // deepest evolution chain worth walking
 
 static const u8 sText_Desc_OneType[] = _("Erlaube nur einen Typen, den du\nfangen und benutzen kannst.");
 static const u8 *const sDesc_OneType[] = {
@@ -2433,4 +2434,45 @@ bool8 IsPokecenterChallengeActivated(void)
 bool8 IsOneTypeChallengeActive(void)
 {
     return gSaveBlock3Ptr->challengeSettings.tx_Challenges_OneTypeChallenge != ONE_TYPE_OFF;
+}
+
+// Returns TRUE if the species has the given type, or if any species it can
+// eventually evolve into has it. Lets pre-evolutions that "grow into" the
+// challenge type (e.g. Trapinch for a Dragon run) be used.
+static bool8 DoesEvoLineHaveType(u16 species, u8 type, u8 depth)
+{
+    const struct Evolution *evolutions;
+    u32 i;
+
+    if (species == SPECIES_NONE || depth > EVO_LINE_TYPE_SEARCH_DEPTH)
+        return FALSE;
+
+    if (GetSpeciesType(species, 0) == type || GetSpeciesType(species, 1) == type)
+        return TRUE;
+
+    evolutions = GetSpeciesEvolutions(species);
+    if (evolutions == NULL)
+        return FALSE;
+
+    for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
+    {
+        u16 target = evolutions[i].targetSpecies;
+
+        // An evolution can point at a species this build has compiled out.
+        if (target == SPECIES_NONE || target > NUM_SPECIES || !IsSpeciesEnabled(target))
+            continue;
+
+        if (DoesEvoLineHaveType(target, type, depth + 1))
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+bool8 DoesSpeciesPassOneTypeChallenge(u16 species)
+{
+    if (!IsOneTypeChallengeActive())
+        return TRUE;
+
+    return DoesEvoLineHaveType(species, gSaveBlock3Ptr->challengeSettings.tx_Challenges_OneTypeChallenge, 0);
 }
