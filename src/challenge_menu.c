@@ -745,7 +745,7 @@ static const u8 *const sDesc_RandomMoves[] = {
     COMPOUND_STRING("Zufällige erlernbare Attacken."),
 };
 static const u8 *const sDesc_RandomAbilities[] = {
-    COMPOUND_STRING("{PKMN}-Fähigkeiten bleiben wie im\nOriginalspiel.}"),
+    COMPOUND_STRING("{PKMN}-Fähigkeiten bleiben wie im\nOriginalspiel."),
     COMPOUND_STRING("{PKMN}-Fähigkeiten sind zufällig."),
 };
 static const u8 *const sDesc_RandomEvolutions[] = {
