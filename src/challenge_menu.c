@@ -584,7 +584,7 @@ static const u8 *const sChoices_ExpMult[] = {
 
 static const u8 *const sChoices_TrainerIVs[] = {
     COMPOUND_STRING("AUS"),
-    COMPOUND_STRING("SKAL"),
+    COMPOUND_STRING("SKAL."),
     COMPOUND_STRING("SCHWER"),
 };
 
@@ -1079,7 +1079,7 @@ static const struct ChallengeMenuItem sTabItems_Difficulty[] = {
         .choiceNames  = sChoices_TrainerEVs,
     },
     [ITEM_DIFFICULTY_LESS_ESCAPES] = {
-        .name         = COMPOUND_STRING("FLUCHT"),
+        .name         = COMPOUND_STRING("FLUCHT-SPERRE"),
         .descriptions = sDesc_LessEscapes,
         .numChoices   = 2,
         .choiceNames  = sChoices_OffOn,
@@ -1643,7 +1643,7 @@ static void DrawTopBar(void)
     AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 120 - width, 1, color, 0, tabName);
 
     if (sMenu->currentTab > 0)
-        AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 20, 1, color, 0, sText_TopBar_Left);
+        AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 10, 1, color, 0, sText_TopBar_Left);
     if (sMenu->currentTab < TAB_COUNT - 1)
         AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, right, 1, color, 0, sText_TopBar_Right);
     else if (sMenu->currentTab == TAB_COUNT - 1)
