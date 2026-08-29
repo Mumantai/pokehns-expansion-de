@@ -1089,7 +1089,7 @@
     },
     {
       "id": "MAPSEC_KANTO_VICTORY_ROAD",
-      "name": "SIEGESSTRAẞE",
+      "name": "SIEGESSTRASSE",
       "x": 2,
       "y": 4,
       "width": 1,
@@ -2536,7 +2536,7 @@
     {
       "height": 4,
       "id": "MAPSEC_VICTORY_ROAD_HNS",
-      "name": "SIEGESSTRAẞE",
+      "name": "SIEGESSTRASSE",
       "width": 1,
       "x": 16,
       "y": 4
