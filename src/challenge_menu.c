@@ -1106,7 +1106,7 @@ static const struct ChallengeMenuItem sTabItems_Difficulty[] = {
 // =============================================================================
 
 static const u8 *const sDesc_Pokecenter[] = {
-    COMPOUND_STRING("Du kannst {POKMN}-Centren und andere\nOrte zum Heilen besuchen."),
+    COMPOUND_STRING("Du kannst {PKMN}-Centren und andere\nOrte zum Heilen besuchen."),
     COMPOUND_STRING("Du kannst deine {PKMN} nur mit\nItems heilen."),
 };
 static const u8 *const sDesc_Expensive[] = {
