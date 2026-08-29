@@ -550,7 +550,7 @@ static const u8 *const sChoices_ShinyChance[] = {
 
 static const u8 *const sChoices_Nuzlocke[] = {
     COMPOUND_STRING("AUS"),
-    COMPOUND_STRING("EINF."),
+    COMPOUND_STRING("EINFACH"),
     COMPOUND_STRING("NORMAL"),
     COMPOUND_STRING("SCHWER"),
 };
@@ -584,7 +584,7 @@ static const u8 *const sChoices_ExpMult[] = {
 
 static const u8 *const sChoices_TrainerIVs[] = {
     COMPOUND_STRING("AUS"),
-    COMPOUND_STRING("SKAL."),
+    COMPOUND_STRING("SKAL"),
     COMPOUND_STRING("SCHWER"),
 };
 
@@ -754,7 +754,7 @@ static const u8 *const sDesc_RandomEvolutions[] = {
 };
 static const u8 *const sDesc_RandomEvoMethods[] = {
     COMPOUND_STRING("Es können sich nur {PKMN} entwickeln,\ndie es im Orignal auch können."),
-    COMPOUND_STRING("Zufällige Entwicklungsreihen. Es\nkönnen neue Reihen entstehen!"),
+    COMPOUND_STRING("Zufällige Entwicklungsreihen.\nEs können neue Reihen entstehen!"),
 };
 static const u8 *const sDesc_RandomTypeEffec[] = {
     COMPOUND_STRING("Die Wechselwirkung der Typen bleibt\nunverändert."),
@@ -967,7 +967,7 @@ static const struct ChallengeMenuItem sTabItems_Nuzlocke[] = {
 // DIFFICULTY descriptions + table
 // =============================================================================
 
-static const u8 sText_Desc_PartyLimit[] = _("Begrenzt die anz. {PKMN} im Team. 1\nverursacht Probleme in Doppelkämpfen.");
+static const u8 sText_Desc_PartyLimit[] = _("Begrenzt die Anzahl an {PKMN} im Team.\n1 führt zu Problemen in Doppelkämpfen.");
 static const u8 *const sDesc_PartyLimit[] = {
     sText_Desc_PartyLimit, sText_Desc_PartyLimit, sText_Desc_PartyLimit,
     sText_Desc_PartyLimit, sText_Desc_PartyLimit, sText_Desc_PartyLimit,
@@ -1443,12 +1443,12 @@ static void DrawChoices_Three(const u8 *const *strings, int selection, int y, bo
 
 static void DrawChoices_Four(const u8 *const *strings, int selection, int y, bool8 active)
 {
-    static const u8 orders[][3] = { {0, 1, 2}, {0, 1, 2}, {1, 2, 3}, {1, 2, 3} };
+    static const u8 orders[][2] = { {0, 1}, {1, 2}, {2, 3}, {2, 3} };
     const u8 *order = orders[selection];
-    int xMid = GetMiddleX(strings[order[0]], strings[order[1]], strings[order[2]]);
+    // int xMid = GetMiddleX(strings[order[0]], strings[order[1]], strings[order[2]]);
     DrawRightSideChoiceText(strings[order[0]], 104, y + 1, selection == order[0], active);
-    DrawRightSideChoiceText(strings[order[1]], xMid, y + 1, selection == order[1], active);
-    DrawRightSideChoiceText(strings[order[2]], GetStringRightAlignXOffset(FONT_NORMAL, strings[order[2]], 198), y + 1, selection == order[2], active);
+    // DrawRightSideChoiceText(strings[order[1]], xMid, y + 1, selection == order[1], active);
+    DrawRightSideChoiceText(strings[order[1]], GetStringRightAlignXOffset(FONT_NORMAL, strings[order[1]], 198), y + 1, selection == order[1], active);
 }
 
 static void DrawChoices_Five(const u8 *const *strings, int selection, int y, bool8 active)
@@ -1636,14 +1636,14 @@ static void DrawTopBar(void)
     const u8 color[3] = { TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_OPTIONS_WHITE, TEXT_COLOR_OPTIONS_GRAY_FG };
     const u8 *tabName = sTabs[sMenu->currentTab].tabName;
     int width = GetStringWidth(FONT_SMALL, tabName, 0) / 2;
-    int right = 240 - GetStringWidth(FONT_SMALL, sText_TopBar_Right, 0) - 5;
+    int right = 240 - GetStringWidth(FONT_SMALL, sText_TopBar_Right, 0) - 20;
 
     FillWindowPixelBuffer(WIN_TOPBAR, PIXEL_FILL(15));
 
     AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 120 - width, 1, color, 0, tabName);
 
     if (sMenu->currentTab > 0)
-        AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 5, 1, color, 0, sText_TopBar_Left);
+        AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 20, 1, color, 0, sText_TopBar_Left);
     if (sMenu->currentTab < TAB_COUNT - 1)
         AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, right, 1, color, 0, sText_TopBar_Right);
     else if (sMenu->currentTab == TAB_COUNT - 1)
