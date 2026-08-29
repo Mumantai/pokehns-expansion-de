@@ -221,14 +221,14 @@ static const u8 *const sChoices_ButtonMode[] = {
 };
 
 static const u8 *const sChoices_TextSpeed[] = {
-    COMPOUND_STRING("SLOW"),
-    COMPOUND_STRING("MID"),
-    COMPOUND_STRING("FAST"),
-    COMPOUND_STRING("FASTER"),
+    COMPOUND_STRING("LANGS."),
+    COMPOUND_STRING("MITTEL"),
+    COMPOUND_STRING("SCHNELL"),
+    COMPOUND_STRING("SCHNELLER"),
 };
 
 static const u8 *const sChoices_MetricImperial[] = {
-    COMPOUND_STRING("METRISCH"),
+    COMPOUND_STRING("METER"),
     COMPOUND_STRING("IMPERIAL"),
 };
 
@@ -271,20 +271,20 @@ static const u8 *const sDesc_TextSpeed[] = {
     sText_Desc_TextSpeed,
 };
 static const u8 *const sDesc_BattleScene[] = {
-    COMPOUND_STRING("Spiel die Animationen von\n{PKMN} und Attacken ab."),
-    COMPOUND_STRING("Überspringe die Animationen von\n{PKMN} und Attacken."),
+    COMPOUND_STRING("Spiel die Animationen von {PKMN} und\n Attacken ab."),
+    COMPOUND_STRING("Überspringe die Animationen von {PKMN}\n und Attacken."),
 };
 static const u8 *const sDesc_BattleStyle[] = {
-    COMPOUND_STRING("Möglichkeit das {PKMN} zu wechseln,\nwenn ein gegn. {PKMN} besiegt wurde."),
-    COMPOUND_STRING("Wechsel nur während des Kampfes möglich."),
+    COMPOUND_STRING("Möglichkeit das {PKMN} zu wechseln, wenn\n ein gegn. {PKMN} besiegt wurde."),
+    COMPOUND_STRING("Wechsel nur während des Kampfes\nmöglich."),
 };
 static const u8 *const sDesc_ButtonMode[] = {
-    COMPOUND_STRING("Alle Knöpfe funktionieren wie gewohnt."),
-    COMPOUND_STRING("In manchen Menüs dienen\n{L_BUTTON} und {R_BUTTON} als {LEFT_ARROW} und {RIGHT_ARROW}."),
-    COMPOUND_STRING("{L_BUTTON} dient als {A_BUTTON}.\nErlaubt einhändiges Spielen."),
+    COMPOUND_STRING("Die gewohnte Knopfbelegung."),
+    COMPOUND_STRING("In manchen Menüs dienen {L_BUTTON} und {R_BUTTON}\nals {LEFT_ARROW} und {RIGHT_ARROW}."),
+    COMPOUND_STRING("{L_BUTTON} funktioniert wie {A_BUTTON}.\nErlaubt einhändiges Spielen."),
 };
 static const u8 *const sDesc_Follower[] = {
-    COMPOUND_STRING("Das erste {PKMN} in deinem Team\nfolgt dir."),
+    COMPOUND_STRING("Das erste {PKMN} in deinem Team folgt\ndir."),
     COMPOUND_STRING("Gehe alleine auf Reisen."),
 };
 static const u8 *const sDesc_LargeFollower[] = {
@@ -304,8 +304,8 @@ static const u8 *const sDesc_Fishing[] = {
     COMPOUND_STRING("Angel manuell einholen.\nAngel wie immer!"),
 };
 static const u8 *const sDesc_FasterJoy[] = {
-    COMPOUND_STRING("SCHW. JOY heilt dich schneller."),
-    COMPOUND_STRING("SCHW. JOY heilt dich mit der\ngewöhnlichen Animation."),
+    COMPOUND_STRING("SCHWESTER JOY heilt dich schneller."),
+    COMPOUND_STRING("SCHWESTER JOY heilt dich mit der\ngewohnten Animation."),
 };
 static const u8 *const sDesc_UnitType[] = {
     COMPOUND_STRING("Angaben im metrischen System."),
@@ -346,7 +346,7 @@ static const u8 *const sDesc_RunType[] = {
 };
 static const u8 *const sDesc_LRRun[] = {
     COMPOUND_STRING("Zeigt eine Bestätigung an, dass\ndu flüchten kannst."),
-    COMPOUND_STRING("Deaktiviert die Bestätigung.\nTastenkombination funktioniert dennoch."),
+    COMPOUND_STRING("Deaktiviert die Bestätigung.\nTastenkomb. funktioniert dennoch."),
 };
 static const u8 *const sDesc_Sound[] = {
     COMPOUND_STRING("Gleicher Ton aus allen Lautsprechern.\nEmpfohlen für originale Hardware."),
@@ -413,7 +413,7 @@ static const struct OptionMenuItem sTabItems_Main[] = {
         .choiceNames  = sChoices_OnOff,
     },
     [ITEM_MAIN_AUTORUN_SURF] = {
-        .name         = COMPOUND_STRING("AUTOM. RENNEN (SURFER)"),
+        .name         = COMPOUND_STRING("SCHNELL SURFEN"),
         .descriptions = sDesc_AutorunSurf,
         .numChoices   = 2,
         .choiceNames  = sChoices_OnOff,
@@ -671,12 +671,12 @@ static void DrawChoices_Three(const u8 *const *strings, int selection, int y, bo
 
 static void DrawChoices_Four(const u8 *const *strings, int selection, int y, bool8 active)
 {
-    static const u8 orders[][3] = { {0, 1, 2}, {0, 1, 2}, {1, 2, 3}, {1, 2, 3} };
+    static const u8 orders[][2] = { {0, 1}, {1, 2}, {2, 3}, {2, 3} };
     const u8 *order = orders[selection];
-    int xMid = GetMiddleX(strings[order[0]], strings[order[1]], strings[order[2]]);
+    // int xMid = GetMiddleX(strings[order[0]], strings[order[1]], strings[order[2]]);
     DrawRightSideChoiceText(strings[order[0]], 104, y + 1, selection == order[0], active);
-    DrawRightSideChoiceText(strings[order[1]], xMid, y + 1, selection == order[1], active);
-    DrawRightSideChoiceText(strings[order[2]], GetStringRightAlignXOffset(FONT_NORMAL, strings[order[2]], 198), y + 1, selection == order[2], active);
+    // DrawRightSideChoiceText(strings[order[1]], xMid, y + 1, selection == order[1], active);
+    DrawRightSideChoiceText(strings[order[1]], GetStringRightAlignXOffset(FONT_NORMAL, strings[order[1]], 198), y + 1, selection == order[1], active);
 }
 
 // Frame type: draws "TYPE  N" on the right side
