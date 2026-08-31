@@ -169,8 +169,8 @@ Script_NewSinjoh_Traveler_Brother::
 NewSinjoh_Text_TravelBrother_Greeting:
     .string "All our goods are homemade\n"
 	.string "and grown locally!\p"
-	.string "My big Sister opened up this shop,\n"
-	.string "because the PokeMart company\l"
+	.string "My big sister opened up this shop,\n"
+	.string "because the POKéMART company\l"
 	.string "won't open a location\l"
 	.string "this far out from a major town.$"
 
@@ -274,7 +274,7 @@ NewSinjoh_EventScript_Sage2::
 	end
 
 NewSinjoh_Text_Sage2:
-	.string "Times change, but the stantler\n"
+	.string "Times change, but the STANTLER\n"
 	.string "still gather. For that, we can\l"
 	.string "be thankful.$"
 
@@ -284,7 +284,7 @@ NewSinjoh_EventScript_Daughter::
 
 NewSinjoh_Text_Daughter:
     .string "Wheeeeee!!\p"
-    .string "Look Mommy!\n"
+    .string "Look, Mommy!\n"
     .string "No hands!\p"
 	.string "Just like the snowboarders!$"
 
