@@ -221,10 +221,10 @@ static const u8 *const sChoices_ButtonMode[] = {
 };
 
 static const u8 *const sChoices_TextSpeed[] = {
-    COMPOUND_STRING("LANGS."),
-    COMPOUND_STRING("MITTEL"),
-    COMPOUND_STRING("SCHNELL"),
-    COMPOUND_STRING("SCHNELLER"),
+    COMPOUND_STRING("1"),
+    COMPOUND_STRING("2"),
+    COMPOUND_STRING("3"),
+    COMPOUND_STRING("4"),
 };
 
 static const u8 *const sChoices_MetricImperial[] = {
@@ -671,12 +671,12 @@ static void DrawChoices_Three(const u8 *const *strings, int selection, int y, bo
 
 static void DrawChoices_Four(const u8 *const *strings, int selection, int y, bool8 active)
 {
-    static const u8 orders[][2] = { {0, 1}, {1, 2}, {2, 3}, {2, 3} };
+    static const u8 orders[][3] = { {0, 1, 2}, {0, 1, 2}, {1, 2, 3}, {1, 2, 3} };
     const u8 *order = orders[selection];
-    // int xMid = GetMiddleX(strings[order[0]], strings[order[1]], strings[order[2]]);
+    int xMid = GetMiddleX(strings[order[0]], strings[order[1]], strings[order[2]]);
     DrawRightSideChoiceText(strings[order[0]], 104, y + 1, selection == order[0], active);
-    // DrawRightSideChoiceText(strings[order[1]], xMid, y + 1, selection == order[1], active);
-    DrawRightSideChoiceText(strings[order[1]], GetStringRightAlignXOffset(FONT_NORMAL, strings[order[1]], 198), y + 1, selection == order[1], active);
+    DrawRightSideChoiceText(strings[order[1]], xMid, y + 1, selection == order[1], active);
+    DrawRightSideChoiceText(strings[order[2]], GetStringRightAlignXOffset(FONT_NORMAL, strings[order[2]], 198), y + 1, selection == order[2], active);
 }
 
 // Frame type: draws "TYPE  N" on the right side
