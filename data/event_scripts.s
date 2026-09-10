@@ -1460,9 +1460,9 @@ gText_PokemonCenterSign::
 	.string "POKéMON CENTER$"
 
 gText_MomOrDadMightLikeThisProgram::
-	.string "{STR_VAR_1} might like this program.\n"
+	.string "{STR_VAR_1} würde dieses Programm gefallen.\n"
 	.string "… … … … … … … … … … … … … … … …\p"
-	.string "Better get going!$"
+	.string "Ich beeile mich besser!$"
 
 gText_WhichFloorWouldYouLike::
 	.string "Welcome to LILYCOVE DEPARTMENT STORE.\p"
