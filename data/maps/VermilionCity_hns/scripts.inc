@@ -529,3 +529,64 @@ VermilionCity_Text_StevenOutro:
 	.string "Ah, that's right.\p"
 	.string "I must go.\n"
 	.string "May our journeys cross again.$"
+
+VermilionCity_EventScript_TriggerSamson::
+	lock
+	clearflag FLAG_HIDE_VERMILION_CITY_SAMSON
+	addobject LOCALID_VERMILION_CITY_SAMSON
+	playse SE_BANG
+	applymovement LOCALID_VERMILION_CITY_SAMSON, VermilionCity_Movement_SamsonEnter
+	applymovement LOCALID_PLAYER, VermilionCity_Movement_PlayerSlideback
+	waitmovement LOCALID_VERMILION_CITY_SAMSON
+	waitmovement LOCALID_PLAYER
+	msgbox VermilionCity_Text_Samson, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_VERMILION_CITY_SAMSON, VermilionCity_Movement_SamsonLeave
+	waitmovement LOCALID_VERMILION_CITY_SAMSON
+	removeobject LOCALID_VERMILION_CITY_SAMSON
+	setflag FLAG_HIDE_VERMILION_CITY_SAMSON
+	setvar VAR_VERMILION_CITY_SAMSON, 2
+	release
+	end
+
+VermilionCity_Movement_PlayerSlideback:
+	lock_facing_direction
+	walk_fast_down
+	walk_fast_down
+	unlock_facing_direction
+	step_end
+
+VermilionCity_Movement_SamsonEnter:
+	walk_fast_down
+	walk_fast_down
+	step_end
+
+VermilionCity_Movement_SamsonLeave:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+VermilionCity_Text_Samson:
+	.string "Whoah!\p"
+	.string "Sorry kiddo, I'm in a hurry!\p"
+	.string "The ferry on ROUTE 13 will be\n"
+	.string "leaving for the ISLES soon, and\l"
+	.string "I've got to be on it!\p"
+	.string "Phew... Phew...\p"
+	.string "I ran all the way here from\n"
+	.string "MT. MOON.\p"
+	.string "See this tchotchke here?\p"
+	.string "I picked up this STRANGE SOUVENIR\n"
+	.string "at the GIFT SHOP.\p"
+	.string "It's my ticket onto the ISLES.\p"
+	.string "Well, see-ya!$"
