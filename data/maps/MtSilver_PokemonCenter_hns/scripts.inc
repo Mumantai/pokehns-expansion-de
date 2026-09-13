@@ -63,13 +63,15 @@ MtSilver_PokemonCenter_EventScript_Meara_WarpToSinjoh::
 	end
 
 MtSilver_PokemonCenter_Text_Meara1:
-	.string "I'm a researcher from the PEWTER\n"
-	.string "CITY museum.\p"
+	.string "I'm a researcher from... Uhh...\n"
+	.string "the PEWTER CITY museum!\p"
 	.string "An unusual amount of artifacts have\n"
 	.string "been discovered in this area, so\l"
 	.string "I've come here to investigate.\p"
 	.string "Have you found anything strange\n"
-	.string "in the mountain?$"
+	.string "in the mountain?\p"
+	.string "Maybe something like a FLUTE?\p"
+	.string "If you do, please show me.$"
 
 MtSilver_PokemonCenter_Text_Meara2:
 	.string "That flute!\p"

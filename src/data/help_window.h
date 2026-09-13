@@ -143,5 +143,39 @@ const struct HelpWindow gHelpWindowInfo[] =
         .descFont = FONT_SMALL,
         .headerColor = {0, 8, 3},
     },
+    [HELP_POKEBLOCK_WINDOW] =
+    {
+        .header = COMPOUND_STRING("TRÖGE: NORMALE POKéRIEGEL"),
+        .desc = COMPOUND_STRING("Farben locken perfekte IS an:\n"
+                                "ROT: KP,ANG,INI   BLU: KP,SPA,INI\n"
+                                "PNK: ANG,SPA,INI  GRN: KP,VER,SPV\n"
+                                "GLB: KP,ANG,VER   PUR: ANG,VER,SPV\n"
+                                "IND: KP,SPA,SPV   BRN: VER,INI,SPV\n"
+                                "LBL: SPA,INI,SPV  OLV: ANG,VER,INI\n"
+                                "GRA: KP,ANG,SPA\n"
+                                "Jeder POKéRIEGEL  lockt POKéMON mit\n"
+                                "VERSTECKTER FÄHIGKEIT an."
+
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+    [HELP_GOLD_POKEBLOCK_WINDOW] =
+    {
+        .header = COMPOUND_STRING("TRÖGE: GOLDENE POKéRIEGEL"),
+        .desc = COMPOUND_STRING("GOLDENE POKéRIEGEL locken POKéMON mit\n"
+                                "5 perfekten IS an. Der Geschmack bestimmt\n"
+                                "welche IS nicht perfekt ist.\n"
+                                "SCHARF: SP.ANG    TROCKEN:    ANGRIFF\n"
+                                "SÜSS: SP.VERT     BITTER: INITIATIVE\n"
+                                "SAUER: KP\n"
+                                "Jeder POKéRIEGEL  lockt POKéMON mit\n"
+                                "VERSTECKTER FÄHIGKEIT an."
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
     // Add more entries
 };

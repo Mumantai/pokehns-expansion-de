@@ -64,6 +64,7 @@ NewBarkTown_PlayersHouse_1F_EventScript_Mom_Regular::
 NewBarkTown_PlayersHouse_1F_EventScript_Mom_PokecenterChallenge::
 	msgbox PlayersHouse_1F_Text_YouShouldRestABit_PokecenterChallenge, MSGBOX_DEFAULT
 	call NewBarkTown_PlayersHouse_1F_EventScript_MomSavingsMenu
+	fadedefaultbgm
 	release
 	end
 
@@ -317,6 +318,7 @@ NewBarkTown_PlayersHouse_1F_Text_ExplainPokeGear:
 	.string "MAMA: Telefonnummern werden gespeichert.\n"
 	.string "Wähle einfach den Namen der Person,\p"
 	.string "die du anrufen möchtest.\n"
+	.string "I've already registered my number.\n"
 	.string "I've already registered my number.\p"
 	.string "Ist das nicht praktisch?$"
 

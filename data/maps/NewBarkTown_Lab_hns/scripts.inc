@@ -762,18 +762,18 @@ NewBarkTown_Lab_Text_ElmDirections1:
 	.string "Ruf mich an, wenn es etwas gibt!$"
 
 NewBarkTown_Lab_Text_ElmDirections1_Register:
-	.string "MR. POKéMON lives a little bit\n"
-	.string "beyond CHERRYGROVE, the next\l"
-	.string "city over.\p"
-	.string "It's almost a direct route\n"
-	.string "there, so you can't miss it.\p"
-	.string "But just in case, here's my\n"
-	.string "phone number. Call me if\l"
-	.string "anything comes up!$"
+	.string "MR. POKéMON wohnt ein kleines\n"
+	.string "Stück nördlich von ROSALIA CITY,\l"
+	.string "dem nächsten Ort.\p"
+	.string "Der Weg führt dich fast direkt\n"
+	.string "dorthin, du kannst es nicht verfehlen.\p"
+	.string "Aber nur für den Fall, gebe ich dir\n"
+	.string "noch meine Nummer.\p"
+	.string "Ruf mich an, wenn es etwas gibt!$"
 
 NewBarkTown_Lab_Text_RegisteredElm:
-	.string "Registered PROF.ELM\n"
-	.string "in the POKéGEAR.$"
+	.string "PROF. LIND im POKéCOM\n"
+	.string "registriert.$"
 
 
 NewBarkTown_Lab_Text_ElmLetYourMonBattle:

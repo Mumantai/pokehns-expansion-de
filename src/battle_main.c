@@ -105,7 +105,7 @@ static void SpriteCB_MoveWildMonToRight(struct Sprite *sprite);
 static void SpriteCB_WildMonShowHealthbox(struct Sprite *sprite);
 static void SpriteCB_WildMonAnimate(struct Sprite *sprite);
 static void SpriteCB_AnimFaintOpponent(struct Sprite *sprite);
-static void SpriteCB_BlinkVisible(struct Sprite *sprite);
+void SpriteCB_BlinkVisible(struct Sprite *sprite);
 static void SpriteCB_Idle(struct Sprite *sprite);
 static void SpriteCB_BattleSpriteSlideLeft(struct Sprite *sprite);
 static void TurnValuesCleanUp(bool8 var0);
@@ -2909,13 +2909,27 @@ void SpriteCB_ShowAsMoveTarget(struct Sprite *sprite)
     sprite->callback = SpriteCB_BlinkVisible;
 }
 
-static void SpriteCB_BlinkVisible(struct Sprite *sprite)
+void SpriteCB_BlinkVisible(struct Sprite *sprite)
 {
     if (--sprite->data[3] == 0)
     {
         sprite->invisible ^= 1;
         sprite->data[3] = 8;
     }
+}
+
+// Only battlers that were actually made to blink as a move target may have their
+// visibility restored from data[4], otherwise e.g. the attacker of a spread move
+// that doesn't target itself would get its visibility set from stale sprite data.
+bool32 ShouldHideBattler(enum BattlerId battler)
+{
+    SpriteCallback callback;
+
+    if (!IsBattlerAlive(battler) || !gBattleSpritesDataPtr->healthBoxesData[battler].healthboxIsBouncing)
+        return FALSE;
+
+    callback = gSprites[gBattlerSpriteIds[battler]].callback;
+    return callback == SpriteCB_ShowAsMoveTarget || callback == SpriteCB_BlinkVisible;
 }
 
 void SpriteCB_HideAsMoveTarget(struct Sprite *sprite)
@@ -3254,7 +3268,11 @@ static void BattleStartClearSetData(void)
     gBattleStruct->runTries = 0;
     gBattleStruct->safariGoNearCounter = 0;
     gBattleStruct->safariPkblThrowCounter = 0;
+    // Species with a catch rate under 13 would truncate to a factor of 0, which
+    // zeroes the capture odds and leaves bait/rock unable to move it off 0.
     gBattleStruct->safariCatchFactor = gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate * 100 / 1275;
+    if (gBattleStruct->safariCatchFactor == 0)
+        gBattleStruct->safariCatchFactor = 1;
     gBattleStruct->safariEscapeFactor = 3;
     gBattleStruct->wildVictorySong = 0;
     // Amulet Coin applies as long as any party mon holds it, even if that mon never enters the battle.
@@ -5606,7 +5624,10 @@ static void HandleEndTurn_BattleWon(void)
         else if (gMapHeader.regionMapSectionId == MAPSEC_TRAINER_HILL)
         {
             PlayBGM(MUS_HG_VICTORY_TRAINER);
-        #else
+        }
+    #endif
+        else
+        {
             PlayBGM(MUS_VICTORY_TRAINER);
         }
     }
@@ -5624,6 +5645,10 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_ELITE_FOUR_HNS:
         case TRAINER_CLASS_CHAMPION_HNS:
         case TRAINER_CLASS_PKMN_TRAINER_1_HNS:
+        // Same for FR/LG, which has no separate league victory theme at all - its
+        // Elite Four and Champion share the Gym Leader one.
+        case TRAINER_CLASS_ELITE_FOUR_FRLG:
+        case TRAINER_CLASS_CHAMPION_FRLG:
         #if IS_HNS
             // Steven is an Emerald guest, so he keeps the Emerald league victory theme
             // to match the Emerald champion battle theme GetBattleBGM gives him. No
@@ -5633,6 +5658,8 @@ static void HandleEndTurn_BattleWon(void)
                 PlayBGM(MUS_VICTORY_LEAGUE);
             else
                 PlayBGM(MUS_HG_VICTORY_GYM_LEADER);
+        #elif IS_FRLG
+            PlayBGM(MUS_RG_VICTORY_GYM_LEADER);
         #else
             PlayBGM(MUS_VICTORY_LEAGUE);
         #endif
@@ -5648,8 +5675,11 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_LEADER:
         case TRAINER_CLASS_LEADER_HNS:
         case TRAINER_CLASS_LEADER_KANTO_HNS:
+        case TRAINER_CLASS_LEADER_FRLG:
         #if IS_HNS
             PlayBGM(MUS_HG_VICTORY_GYM_LEADER);
+        #elif IS_FRLG
+            PlayBGM(MUS_RG_VICTORY_GYM_LEADER);
         #else
             PlayBGM(MUS_VICTORY_GYM_LEADER);
         #endif
@@ -5657,10 +5687,7 @@ static void HandleEndTurn_BattleWon(void)
         default:
         #if IS_HNS
             PlayBGM(MUS_HG_VICTORY_TRAINER);
-        }
-    #endif
-        else
-        {
+        #else
             PlayBGM(MUS_VICTORY_TRAINER);
         #endif
             break;
