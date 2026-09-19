@@ -420,9 +420,6 @@ SafariZoneGate_SafariZoneEntrance_Text_Boy:
 SafariZoneGate_SafariZoneEntrance_Text_BoyGiveCase:
 	.string "Here, you seem like you need this.$"
 
-SafariZoneGate_SafariZoneEntrance_Text_BoyGiveCase:
-	.string "Here, you seem like you need this.$"
-
 SafariZoneGate_SafariZoneEntrance_Text_Engineer:
 	.string "Sorry Trainer, this area is still\n"
 	.string "under construction. Check back\l"
