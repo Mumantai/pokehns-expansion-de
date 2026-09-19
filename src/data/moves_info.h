@@ -25,98 +25,98 @@ const u8 gNotDoneYetDescription[] = _(
 static const u8 sNullDescription[] = _("");
 
 static const u8 sMegaDrainDescription[] = _(
-    "Attack that absorbs\n"
-    "half the damage inflicted.");
+    "Attacke, die die Hälfte\n"
+    "des Schadens absorbiert.");
 
 #if B_SKIP_RECHARGE != GEN_1
 static const u8 sHyperBeamDescription[] = _(
-    "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "Starke Attacke. Angreifer\n"
+    "setzt eine Runde aus.");
 #else
 static const u8 sHyperBeamDescription[] = _(
-    "Leaves the user immobile\n"
-    "if target is not KO'd.");
+    "Angreifer setzte eine Runde aus,\n"
+    "wenn das Ziel nicht besiegt wird.");
 #endif
 
 static const u8 sRevengeDescription[] = _(
-    "Attack that moves last\n"
-    "and gains power if hit.");
+    "Attacke wird stärker, wenn\n"
+    "Anwender Schaden nimmt.");
 
 static const u8 sPluckDescription[] = _(
-    "Eats the foe's held Berry\n"
-    "gaining its effect.");
+    "Isst getragene Beeren vom\n"
+    "Gegner und erhält ihren Effekt.");
 
 static const u8 sHealingWishDescription[] = _(
-    "The user faints to heal up\n"
-    "the recipient.");
+    "Anwender geht K.O. Heilt das\n"
+    "nächste POKéMON komplett.");
 
 static const u8 sWringOutDescription[] = _(
-    "The higher the foe's HP\n"
-    "the more damage caused.");
+    "Je höher die KP des Gegners,\n"
+    "desto kraftvoller die Attacke.");
 
 static const u8 sUTurnDescription[] = _(
-    "Does damage then switches\n"
-    "out the user.");
+    "Verursacht Schaden und\n"
+    "wechselt den Anwender aus.");
 
 static const u8 sStormThrowDescription[] = _(
-    "This attack always results\n"
-    "in a critical hit.");
+    "Ein Angriff mit voller Wucht\n"
+    "und Volltreffergarantie.");
 
 static const u8 sCircleThrowDescription[] = _(
-    "Knocks foe away to switch\n"
-    "it out or end wild battle.");
+    "Wechselt Gegner aus oder\n"
+    "beendet Kämpfe gegen wilde PKMN.");
 
 static const u8 sChipAwayDescription[] = _(
-    "Strikes through the foe's\n"
-    "stat changes.");
+    "Richtet Schaden unabhängig von\n"
+    "Statusveränderungen d. Zieles an.");
 
 static const u8 sHeavySlamDescription[] = _(
-    "Does more damage if the\n"
-    "user outweighs the foe.");
+    "Höherer Schaden, wenn Anwender\n"
+    "mehr als das Ziel wiegt.");
 
 static const u8 sPsyshockDescription[] = _(
-    "Attacks with a psychic wave\n"
-    "that does physical damage.");
+    "Angriff mit Energiewelle.\n"
+    "Verursacht physischen Schaden.");
 
 static const u8 sLavaPlumeDescription[] = _(
-    "Scarlet flames torch\n"
-    "everything around the user.");
+    "Ein Flammeninferno fegt um\n"
+    "den Anwender hinweg.");
 
 static const u8 sShadowForceDescription[] = _(
-    "Vanishes on the first turn\n"
-    "then strikes the next turn.");
+    "Anw. verschwindet und\n"
+    "attackiert in Runde 2.");
 
 static const u8 sFalseSwipeDescription[] = _(
-    "Attack that leaves the\n"
-    "foe with at least 1 HP.");
+    "Ein Angriff, der dem Gegner\n"
+    "zumindest 1 KP lässt.");
 
 static const u8 sDrainingKissDescription[] = _(
-    "Attack that absorbs over\n"
-    "half the damage inflicted.");
+    "Anwender heilt sich um mehr als\n"
+    "die Hälfte des anger. Schadens.");
 
 static const u8 sCloseCombatDescription[] = _(
-    "A strong attack but lowers\n"
-    "the defensive stats.");
+    "Starker Angriff, der die Vert.\n"
+    "und Spez.-Vert. des Anw. senkt.");
 
 static const u8 sHyperspaceHoleDescription[] = _(
-    "Uses a warp hole to attack.\n"
-    "Can't be evaded.");
+    "Unausweichbare Attacke durch\n"
+    "ein Dimensionsloch.");
 
 static const u8 sSuckerPunchDescription[] = _(
-    "Strikes first if the foe\n"
-    "is preparing Attack.");
+    "Erstschlag, wenn der Gegner\n"
+    "eine Attacke vorbereitet.");
 
 static const u8 sFeintDescription[] = _(
-    "Attack that hits foes\n"
-    "using moves like Protect.");
+    "Trifft Gegner durch Attacken\n"
+    "wie Schutzschild oder Scanner.");
 
 static const u8 sProtectDescription[] = _(
-    "Evades attack, but may fail\n"
-    "if used in succession.");
+    "Weicht Angriff aus.\n"
+    "Scheitert evtl. bei Wdh.");
 
 static const u8 sGMaxOneBlowDescription[] = _(
-    "G-max Urshifu attack.\n"
-    "Ignores Max Guard.");
+    "G-Dynamax-Wulaosus Angriff.\n"
+    "Ignoriert Dyna-Wall.");
 
 const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 {

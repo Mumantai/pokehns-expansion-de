@@ -697,10 +697,10 @@ SecretBase_Text_DataUnregistered:
 	.string "Data has been unregistered.$"
 
 SecretBase_Text_BootUpPC:
-	.string "{PLAYER} booted up the PC.$"
+	.string "{PLAYER} schaltet den PC ein.$"
 
 SecretBase_Text_WhatWouldYouLikeToDo:
-	.string "What would you like to do?$"
+	.string "Was möchtest du tun?$"
 
 SecretBase_Text_RegistryInfo:
 	.string "Once registered, a SECRET BASE will not\n"
