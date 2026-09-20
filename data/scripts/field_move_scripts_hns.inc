@@ -314,12 +314,12 @@ Text_CantSmash:
 	.string "may be able to smash it.$"
 
 Text_WantToHeadbutt:
-	.string "This tree may house POKéMON.\n"
-	.string "Would you like to use HEADBUTT?$"
+	.string "Ein mannshoher Baum.\n"
+	.string "Möchtest du KOPFNUSS einsetzen?$"
 
 Text_CantHeadbutt:
-	.string "It's a small tree, but a wild\n"
-	.string "POKéMON may be living within.$"
+	.string "Dieser mannshohe Baum sieht so aus, als\n"
+	.string "könnte er eine KOPFNUSS vertragen.$"
 
 EventScript_StrengthBoulder::
 	lockall

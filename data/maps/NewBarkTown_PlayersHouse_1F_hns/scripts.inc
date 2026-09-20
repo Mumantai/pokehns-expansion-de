@@ -318,8 +318,7 @@ NewBarkTown_PlayersHouse_1F_Text_ExplainPokeGear:
 	.string "MAMA: Telefonnummern werden gespeichert.\n"
 	.string "Wähle einfach den Namen der Person,\p"
 	.string "die du anrufen möchtest.\n"
-	.string "I've already registered my number.\n"
-	.string "I've already registered my number.\p"
+	.string "Meine Nummer ist bereits gespeichert.\p"
 	.string "Ist das nicht praktisch?$"
 
 NewBarkTown_PlayersHouse_1F_Text_WearTheseRunningShoes:
@@ -331,8 +330,8 @@ NewBarkTown_PlayersHouse_1F_Text_SwitchShoesWithRunningShoes:
 	.string "TURBOTRETER.$"
 
 NewBarkTown_PlayersHouse_1F_Text_ExplainRunningShoes:
-	.string "MAMA: {PLAYER}, drücke den B Knopf\n"
-	.string "um mit den TURBOTRETERn zu rennen!$"
+	.string "MAMA: {PLAYER}, drücke den {B_BUTTON} Knopf\n"
+	.string "um mit den TURBOTRETERN zu rennen!$"
 
 NewBarkTown_PlayersHouse_1F_Text_MomHurryUpElmIsWaiting:
 	.string "MAMA: PROF. LIND wartet auf dich.\p"
